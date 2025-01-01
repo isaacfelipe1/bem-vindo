@@ -194,6 +194,22 @@ body {
   font-weight: bold;
 }
 
+button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff6347;
+}
+
 .fireworks {
   display: flex;
   justify-content: center;
@@ -205,5 +221,52 @@ body {
 
 canvas {
   display: block;
+}
+
+/* Responsividade para dispositivos menores */
+@media (max-width: 768px) {
+  .countdown-container {
+    flex-direction: column;
+  }
+
+  .glass {
+    width: 25vw;
+    max-width: 100px;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .countdown h1 {
+    font-size: 1.5rem;
+  }
+
+  .countdown h2 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown h1 {
+    font-size: 1.2rem;
+  }
+
+  .countdown h2 {
+    font-size: 1.5rem;
+  }
+
+  .glass {
+    width: 35vw;
+    max-width: 80px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
 }
 </style>
